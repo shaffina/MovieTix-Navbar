@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail"
+    android:background="@drawable/bg">
+
+    <include
+        android:id="@+id/topmovies"
+        layout="@layout/top_movies">
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topmovies">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_picture"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:src="@drawable/g1"
+                app:layout_constraintTop_toBottomOf="@+id/topmovies"
+                tools:ignore="NotSibling" />
+
+            <ImageView
+                android:id="@+id/iv5"
+                android:layout_width="138dp"
+                android:layout_height="227dp"
+                app:srcCompat="@drawable/garden"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_picture"/>
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="The Garden of Words"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toRightOf="@+id/iv5"
+                app:layout_constraintTop_toTopOf="@+id/iv5" />
+
+            <TextView
+                android:id="@+id/sutradara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Director : Makoto Shinkai"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@+id/iv5"
+                app:layout_constraintTop_toBottomOf="@+id/judul"/>
+
+            <TextView
+                android:id="@+id/writer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Writer : Makoto Shinkai"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@+id/iv5"
+                app:layout_constraintTop_toBottomOf="@+id/sutradara"/>
+
+            <TextView
+                android:id="@+id/genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/genre"
+                android:breakStrategy="simple"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@+id/iv5"
+                app:layout_constraintTop_toBottomOf="@+id/writer"/>
+
+            <TextView
+                android:id="@+id/studio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Studio : CoMix Wave Films"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@+id/iv5"
+                app:layout_constraintTop_toBottomOf="@+id/genre"/>
+
+            <TextView
+                android:id="@+id/runtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Runtime : 46 minute"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@+id/iv5"
+                app:layout_constraintTop_toBottomOf="@+id/studio"/>
+
+            <TextView
+                android:id="@+id/storyline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:breakStrategy="simple"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Storyline"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv5" />
+
+            <TextView
+                android:id="@+id/isi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:breakStrategy="simple"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/isifilm"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/storyline"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buytix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/kotak"
+        android:text="Buy Ticket"
+        app:layout_constraintTop_toBottomOf="@id/isi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="NotSibling"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

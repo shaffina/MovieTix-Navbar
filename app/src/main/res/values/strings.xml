@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Cinema</string>
+    <string name="isifilm">Takao, who dreams of becoming a shoemaker, skips school and is sketching shoes in a garden in the middle of Tokyo. He meets a mysterious woman, Yukino, who is older than him. Then, without arranging the times, the two start to see each other again and again, but only on rainy days</string>
+    <string name="genre">Genre : Drama, Romance, Anime, Slice of Life</string>
+    <array name="bioskop">
+        <item>Ambarukmo XXI</item>
+        <item>Jogja City XXI</item>
+        <item>Pakuwon Mall Jogja CGV</item>
+        <item>Lippo Plaza Jogja Cinepolis</item>
+    </array>
+    <array name="seat">
+        <item>Regular 2D</item>
+        <item>Starium 2D</item>
+        <item>Velvet 2D</item>
+    </array>
+    <array name="metode">
+        <item>Dana</item>
+        <item>ShopeePay</item>
+        <item>Kartu Kredit/Debit</item>
+        <item>On-site</item>
+    </array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

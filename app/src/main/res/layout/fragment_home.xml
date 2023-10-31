@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    tools:context=".HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/topmovies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="TOP MOVIES"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
+            <!--movie-1-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/touchCard1"
+                android:layout_width="130dp"
+                android:layout_height="230dp"
+                app:cardElevation="4dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="50dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/touchCard2">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/garden"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingHorizontal="12dp"
+                        android:text="The Garden of Words"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="8sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+
+            <!--movie-2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/touchCard2"
+                android:layout_width="130dp"
+                android:layout_height="230dp"
+                app:cardElevation="4dp"
+                android:layout_marginLeft="50dp"
+                app:layout_constraintLeft_toRightOf="@+id/touchCard1"
+                app:layout_constraintTop_toTopOf="@+id/touchCard1">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/suzume"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingHorizontal="12dp"
+                        android:text="Suzume no Tojimari"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="8sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+
+            <!--movie-3-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/touchCard3"
+                android:layout_width="130dp"
+                android:layout_height="230dp"
+                app:cardElevation="4dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintLeft_toLeftOf="@+id/touchCard1"
+                app:layout_constraintTop_toBottomOf="@+id/touchCard1">
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/weathering"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingHorizontal="12dp"
+                        android:text="Weathering With You"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="8sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+
+            <!--movie-4-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/touchCard4"
+                android:layout_width="130dp"
+                android:layout_height="230dp"
+                app:cardElevation="4dp"
+                android:layout_marginLeft="50dp"
+                app:layout_constraintLeft_toRightOf="@+id/touchCard3"
+                app:layout_constraintTop_toTopOf="@+id/touchCard3">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/yourname"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingHorizontal="12dp"
+                        android:text="Your Name"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="8sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+
+            <!--movie-5-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/touchCard5"
+                android:layout_width="130dp"
+                android:layout_height="230dp"
+                app:cardElevation="4dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintLeft_toLeftOf="@+id/touchCard3"
+                app:layout_constraintTop_toBottomOf="@+id/touchCard3">
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/gaze"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingHorizontal="12dp"
+                        android:text="Someone's Gaze"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="8sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+
+            <!--movie-6-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/touchCard6"
+                android:layout_width="130dp"
+                android:layout_height="230dp"
+                app:cardElevation="4dp"
+                android:layout_marginLeft="50dp"
+                app:layout_constraintLeft_toRightOf="@+id/touchCard5"
+                app:layout_constraintTop_toTopOf="@+id/touchCard5">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/crossroad"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingHorizontal="12dp"
+                        android:text="Cross Road"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="8sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
